@@ -1,0 +1,14 @@
+*.log
+.DS_Store
+node_modules
+.cache
+dist
+coverage
+
+src/index.ts
+src/icons
+icon
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
