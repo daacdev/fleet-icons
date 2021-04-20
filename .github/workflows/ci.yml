@@ -26,7 +26,7 @@ jobs:
         run: yarn lint
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2 && coveralls < coverage/lcov.info
+        run: yarn jest --ci --coverage --maxWorkers=2 && coveralls < coverage/lcov.info
 
       - name: Build
         run: yarn build
