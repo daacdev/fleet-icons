@@ -1,0 +1,34 @@
+name: Test Coverage
+
+on: ["push", "pull_request"]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+      
+      - name: Use Node 14.x
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: '14.x'
+      
+      - name: Install deps and build
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+
+      - name: Run test coverage
+        run: yarn test --ci --coverage --maxWorkers=2
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
