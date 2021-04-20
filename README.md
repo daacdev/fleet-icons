@@ -7,6 +7,7 @@
   [![CI](https://github.com/daacdev/fleet-icons/actions/workflows/ci.yml/badge.svg)](https://github.com/daacdev/fleet-icons/actions/workflows/ci.yml)
   ![GitHub](https://img.shields.io/github/license/daacdev/fleet-icons)
   ![npm](https://img.shields.io/npm/v/fleet-icons)
+  [![Coverage Status](https://coveralls.io/repos/github/daacdev/fleet-icons/badge.svg?branch=main)](https://coveralls.io/github/daacdev/fleet-icons?branch=main)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 </div>
