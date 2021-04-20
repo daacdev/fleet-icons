@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Fleet Icons',
-  url: 'https://daacdev.github.io/fleet-icons/',
+  url: 'https://daacdev.github.io',
   baseUrl: '/fleet-icons/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
