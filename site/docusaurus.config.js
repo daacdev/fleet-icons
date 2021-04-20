@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Fleet Icons',
   url: 'https://daacdev.github.io/fleet-icons/',
-  baseUrl: '/',
+  baseUrl: '/fleet-icons/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo32x28.ico',
