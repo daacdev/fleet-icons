@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const _camelcase = require('lodash/camelCase');
-const _upperfirst = require('lodash/upperFirst');
+const _camelcase = require('lodash.camelcase');
+const _upperfirst = require('lodash.upperfirst');
 
 const {
   BOOTSTRAP_ICONS_PATH,
