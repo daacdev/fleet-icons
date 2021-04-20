@@ -1,0 +1,68 @@
+---
+sidebar_position: 2
+---
+
+# Uso
+
+Importa los iconos que quieras usar, puedes hacerlo de dos formas:
+
+* [Importando desde el paquete principal](#main-package)
+* [Importar desde un paquete específico](#specific-package)
+
+## Importando desde el paquete principal {#main-package}
+
+Para importar los íconos del paquete principal, solo necesita importar los íconos que necesita desde `fleet-icons`
+
+```jsx
+import { AlarmFill, GiftFill, StarFill } from 'fleet-icons';
+```
+
+:::caution Advertencia
+Importar los íconos de esta manera puede hacer que su aplicación incluya todos los íconos disponibles en `fleet-icons`, incluso si solo está usando unos pocos
+:::
+
+## Importar desde un paquete específico {#specific-package}
+
+Para importar los íconos de un paquete específico, solo necesita importar los íconos que necesita desde `fleet-icons/icon/<nombre del icono>`
+
+```jsx
+import { AlarmFill } from 'fleet-icons/icon/AlarmFill';
+import { GiftFill } from 'fleet-icons/icon/GiftFill';
+import { StarFill } from 'fleet-icons/icon/StarFill';
+```
+
+:::note Nota
+Se recomienda importar los íconos de esta manera, ya que asegura que su aplicación solo incluirá los íconos que está utilizando realmente.
+:::
+
+## Agrega los íconos a la aplicación
+
+```jsx
+const App = () => {
+  return (
+    <div>
+      // highlight-start
+      <AlarmFill />
+      <GiftFill />
+      <StarFill />
+      // highlight-end
+    </div>
+  )
+}
+```
+## Resultado
+
+import { AlarmFill, GiftFill, StarFill } from '../../../../../../.'
+
+
+>  <div style={{
+>    display: 'flex',
+>    flexDirection: 'row',
+>    gap: 30,
+>    alignItems: 'center',
+>    justifyContent: 'center',
+>  }} >
+>    <AlarmFill size='32px' title='AlarmFill Icon' />
+>    <GiftFill size='32px' title='GiftFill Icon' />
+>    <StarFill size='32px' title='StarFill Icon' />
+>  </div>

@@ -1,0 +1,27 @@
+---
+sidebar_position: 3
+---
+
+# Props
+
+In addition to all the attributes that the `svg` component accepts ([see MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute)),
+`Fleet Icons` accepts the following additional props
+
+|Prop|Description|Type|Default value|
+|----|-----------|----|-------------|
+|`size`|Allows you to set the icon size|`number` or `string`|1em|
+|`rotate`|Allows you to rotate the icon by a certain angle|`number`|undefined|
+|`spinner`|Add an infinite rotation animation|`boolean`|undefined|
+|`title`|Accessibility title for the icon|`string`|undefined|
+|`desc`|Description of accessibility for the icon|`string`|undefined|
+
+```jsx live
+<ArrowRightCircleFill
+  fill='currentColor' // see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill
+  size='3em'
+  rotate={45}
+  spinner={false}
+  title='Arrow Right Circle Fill Icon'
+  desc='An example of an arrow circle icon'
+/>
+```

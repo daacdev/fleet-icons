@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Fleet Icons",
+    "description": "El título en la barra de navegación"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Elemento de la barra de navegación con etiqueta Docs"
+  }
+}
