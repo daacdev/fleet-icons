@@ -30,8 +30,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "postinstall": "yarn generate && preconstruct dev",
-    "prepare": "preconstruct build && is-ci || husky install",
+    "prepare": "yarn generate && preconstruct dev && preconstruct build && is-ci || husky install",
     "build": "preconstruct build",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
