@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { ArrowRightCircleFill } from '../../../../.';
+import { ArrowRightCircleFill } from 'fleet-icons/icon/ArrowRightCircleFill';
 
 // Add react-live imports you need here
 const ReactLiveScope = {

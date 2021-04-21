@@ -1,39 +1,33 @@
-<h1 align="center">Fleet Icons</h1>
+# Website
 
-<div align="center">
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-  Bootstrap Icons for Styled Components
+## Installation
 
-  [![CI](https://github.com/daacdev/fleet-icons/actions/workflows/ci.yml/badge.svg)](https://github.com/daacdev/fleet-icons/actions/workflows/ci.yml)
-  ![GitHub](https://img.shields.io/github/license/daacdev/fleet-icons)
-  ![npm](https://img.shields.io/npm/v/fleet-icons)
-  [![Coverage Status](https://coveralls.io/repos/github/daacdev/fleet-icons/badge.svg?branch=main)](https://coveralls.io/github/daacdev/fleet-icons?branch=main)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-</div>
-
-## 📦 Install
-
-```bash
-npm install fleet-icons
+```console
+yarn install
 ```
 
-```bash
-yarn add fleet-icons
+## Local Development
+
+```console
+yarn start
 ```
 
-## 📑 Docs
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-You can get all the complete information with examples on the [website](https://daacdev.github.io/fleet-icons/)
+## Build
 
-* [Getting started](https://daacdev.github.io/fleet-icons/getting-started/installation)
-* [Props](https://daacdev.github.io/fleet-icons/props)
-* [Accessibility](https://daacdev.github.io/fleet-icons/accessibility)
-* [Customization](https://daacdev.github.io/fleet-icons/customization)
-* [Icon List](https://daacdev.github.io/fleet-icons/list-icons)
+```console
+yarn build
+```
 
-## License
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-Licensed under the MIT License.
+## Deployment
 
-See [LICENSE](./LICENSE) for more information.
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
