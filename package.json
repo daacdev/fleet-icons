@@ -1,6 +1,6 @@
 {
   "name": "fleet-icons",
-  "version": "0.0.0-development",
+  "version": "1.0.3",
   "author": "daacdev",
   "description": "Bootstrap Icons for Styled Components",
   "homepage": "https://daacdev.github.io/fleet-icons/",
@@ -38,8 +38,7 @@
     "typecheck": "tsc --noEmit",
     "commit": "git-cz",
     "generate": "rimraf src/icon && rimraf src/index.ts && rimraf icon && node scripts/generate",
-    "clean:project": "rimraf dist && rimraf icon && rimraf src/icon && rimraf src/index.ts",
-    "semantic-release": "semantic-release"
+    "clean:project": "rimraf dist && rimraf icon && rimraf src/icon && rimraf src/index.ts"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -89,7 +88,6 @@
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.4.2",
     "styled-components": "^5.2.3",
     "ts-jest": "^26.5.5",
     "tslib": "^2.2.0",
@@ -105,10 +103,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
   }
 }
