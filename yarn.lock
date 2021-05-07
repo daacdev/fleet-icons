@@ -37,11 +37,6 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.14.0.tgz#a901128bce2ad02565df95e6ecbf195cf9465919"
   integrity sha512-vu9V3uMM/1o5Hl5OekMUowo3FqXLJSw+s+66nt0fSWVWTtmosdzn45JHOB3cPtZoe6CTBDzvSw0RdOY85Q37+Q==
 
-"@babel/compat-data@^7.14.0":
-  version "7.14.0"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.14.0.tgz#a901128bce2ad02565df95e6ecbf195cf9465919"
-  integrity sha512-vu9V3uMM/1o5Hl5OekMUowo3FqXLJSw+s+66nt0fSWVWTtmosdzn45JHOB3cPtZoe6CTBDzvSw0RdOY85Q37+Q==
-
 "@babel/core@^7.1.0", "@babel/core@^7.14.0", "@babel/core@^7.7.5", "@babel/core@^7.7.7":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.14.0.tgz#47299ff3ec8d111b493f1a9d04bf88c04e728d88"
@@ -1475,9 +1470,9 @@
     fastq "^1.6.0"
 
 "@preconstruct/cli@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-2.0.7.tgz#368b0313bc3e04da2442e0133d7bdc3a076a3a55"
-  integrity sha512-xXKbIZa5k39fLs3ufLo2/PgZjQK/ZBzUeK0nFt+t6xE3i++e6y/RN8GNNzGxOgwgM6+m+OL7rB54ruwB/HVWqw==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-2.1.0.tgz#76b30a8952f534f9f4a99862d7267815b6e3b57d"
+  integrity sha512-FfyWlZbinuv3be7yss8p9Yq87V88XKa6XUskeRSFDKgcgH1FwtTg9xYrEJm7j5QV4KThiQfPqoUN4m7hLxWlHg==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.7"
