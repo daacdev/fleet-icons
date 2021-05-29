@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "La etiqueta de la versión actual"
+  },
+  "sidebar.siderbar.category.Getting Started": {
+    "message": "Empezando",
+    "description": "La etiqueta de la categoría Primeros pasos en la barra lateral de la barra lateral"
+  }
+}

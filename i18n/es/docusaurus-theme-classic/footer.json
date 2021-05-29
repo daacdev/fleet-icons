@@ -1,0 +1,30 @@
+{
+  "link.title.Learn": {
+    "message": "Aprender",
+    "description": "El título de la columna de enlaces de pie de página con title = Learn en el pie de página"
+  },
+  "link.title.More": {
+    "message": "Más",
+    "description": "El título de la columna de enlaces de pie de página con title = More en el pie de página"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introducción",
+    "description": "La etiqueta del enlace de pie de página con label = Intriduction que enlaza con /"
+  },
+  "link.item.label.Installation": {
+    "message": "Instalación",
+    "description": "La etiqueta del enlace de pie de página con label = Installation a / Getting Started / Installation"
+  },
+  "link.item.label.Icon List": {
+    "message": "Lista de iconos",
+    "description": "La etiqueta del enlace de pie de página con label = Icon List que se vincula a / list-icons"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "La etiqueta del enlace de pie de página con label = GitHub enlazando a https://github.com/daacdev/fleet-icons"
+  },
+  "copyright": {
+    "message": "Licencia MIT. Construido con Docusaurus.",
+    "description": "Los derechos de autor del pie de página"
+  }
+}

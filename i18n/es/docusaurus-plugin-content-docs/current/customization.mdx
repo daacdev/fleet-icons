@@ -1,0 +1,55 @@
+---
+sidebar_position: 5
+---
+
+# Personalización
+
+Con [styled-components](https://styled-components.com/), puedes personalizar cómodamente los estilos de los iconos.
+
+## Ejemplo
+
+```jsx
+import styled from 'styled-components';
+import { TrashFill } from 'fleet-icons/icon/TrashFill';
+
+const TrashFillIcon = styled(TrashFill)`
+  fill: #673AB7;
+  width: 2em;
+  height: 2em;
+  transition: all .2s;
+  &:hover {
+    fill: #FF5722;
+    width: 2.5em;
+    height: 2.5em;
+  }
+`;
+
+export TrashFillIcon;
+```
+
+### Resultado
+
+import styled from 'styled-components';
+import { TrashFill } from 'fleet-icons/icon/TrashFill';
+
+export const TrashFillIcon = styled(TrashFill)`
+  fill: #673AB7;
+  width: 2em;
+  height: 2em;
+  transition: all .2s;
+  &:hover {
+    fill: #FF5722;
+    width: 2.5em;
+    height: 2.5em;
+  }
+`;
+
+<div style={{
+  display: 'flex',
+  flexDirection: 'row',
+  gap: 30,
+  alignItems: 'center',
+  justifyContent: 'center',
+}} >
+  <TrashFillIcon />
+</div>

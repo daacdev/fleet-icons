@@ -1,0 +1,31 @@
+---
+sidebar_position: 4
+---
+
+# Accesibilidad
+
+De acuerdo con la [W3C specification](https://www.w3.org/TR/SVG-access/#Equivalent),
+solo necesitas agregar el `<title>` y `<desc>` etiquetas al componente `svg`.
+Con esto en mente, el `title` y `desc` props se agregaron para admitir la accesibilidad de los íconos.
+
+Alternativamente, puede agregar accesibilidad de iconos como [lo sugiere Bootstrap Icons](https://icons.getbootstrap.com/#accessibility)
+
+## Ejemplos
+
+```jsx
+<Tools
+  // highlight-start
+  title="Tools Icon"
+  desc="Example of a tools icon"
+  // highlight-end
+/>
+```
+
+```jsx
+<Tools
+  // highlight-start
+  role="img"
+  aria-label="Tools Icon"
+  // highlight-end
+/>
+```
