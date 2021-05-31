@@ -10,8 +10,9 @@
     "icons:generate": "yarn workspace fleet-icons generate",
     "docs:deploy": "yarn workspace docs deploy",
     "build": "preconstruct build",
+    "release": "lerna publish from-package",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.d.ts,.json",
     "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
     "typecheck": "tsc --noEmit",
     "commit": "git-cz"
@@ -53,6 +54,7 @@
     "is-ci": "^3.0.0",
     "jest": "^27.0.3",
     "jest-styled-components": "^7.0.4",
+    "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
