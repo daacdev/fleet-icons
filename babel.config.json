@@ -1,0 +1,26 @@
+{
+  "presets": ["@babel/env", "@babel/react", "@babel/preset-typescript"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "fileName": false,
+        "pure": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

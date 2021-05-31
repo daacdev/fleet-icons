@@ -5,6 +5,7 @@ node_modules
 package-lock.json
 yarn.lock
 
-src/index.ts
-src/icons
+packages/documentation
+
+packages/fleet-icons/src/index.ts
 icon

@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-exports.createFolder = (path) => {
+export const createFolder = (path: string): void => {
   try {
     fs.mkdirSync(path, {
       recursive: true,
@@ -10,7 +10,7 @@ exports.createFolder = (path) => {
   }
 };
 
-exports.writeFile = (path, buffer) => {
+export const writeFile = (path: string, buffer: string): void => {
   try {
     fs.writeFileSync(path, buffer);
   } catch (error) {

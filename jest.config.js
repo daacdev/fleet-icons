@@ -21,10 +21,10 @@ module.exports = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    'src/**/*.{js,ts,tsx}',
-    '!src/icon/**/*',
-    '!src/index.ts',
-    'scripts/**/!(.eslintrc|constants).js',
+    'packages/fleet-icons/src/**/*.{js,ts,tsx}',
+    '!packages/fleet-icons/src/icon/**/*',
+    '!packages/fleet-icons/src/index.ts',
+    'packages/fleet-icons/scripts/**/*.{js,ts,tsx}',
   ],
 
   // The directory where Jest should output its coverage files
@@ -150,6 +150,7 @@ module.exports = {
 
   // The test environment that will be used for testing
   // testEnvironment: "jest-environment-jsdom",
+  testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -166,9 +167,9 @@ module.exports = {
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: [
     '/node_modules/',
-    '<rootDir>/dist',
-    '<rootDir>/icon',
-    '<rootDir>/src/icon',
+    '<rootDir>/packages/fleet-icons/dist',
+    '<rootDir>/packages/fleet-icons/icon',
+    '<rootDir>/packages/fleet-icons/src/icon',
   ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files

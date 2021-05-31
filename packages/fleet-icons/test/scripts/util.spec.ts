@@ -1,19 +1,22 @@
+import { mocked } from 'ts-jest/utils';
+import fs from 'fs';
+import { createFolder, writeFile } from '../../scripts/util';
+
 jest.mock('fs');
 
-const fs = require('fs');
-const { createFolder, writeFile } = require('../../scripts/util');
+const fsMock = mocked(fs, true);
 
 test('Should create a folder at a specific address', () => {
   const path = 'path/test';
 
   createFolder(path);
-  expect(fs.mkdirSync.mock.calls.length).toBe(1);
+  expect(fsMock.mkdirSync.mock.calls.length).toBe(1);
 });
 
 test('Folder creation should fail', () => {
   const path = 'path/test';
 
-  fs.mkdirSync.mockImplementation(() => {
+  fsMock.mkdirSync.mockImplementation(() => {
     throw 'Folder creation failed';
   });
 
@@ -25,14 +28,14 @@ it('Should dump the given buffer into a specified file', () => {
   const buffer = 'This is a test';
 
   writeFile(file, buffer);
-  expect(fs.writeFileSync.mock.calls.length).toBe(1);
+  expect(fsMock.writeFileSync.mock.calls.length).toBe(1);
 });
 
 test('Buffer dump to file should fail', () => {
   const file = 'path/test.txt';
   const buffer = 'This is a test';
 
-  fs.writeFileSync.mockImplementation(() => {
+  fsMock.writeFileSync.mockImplementation(() => {
     throw 'Error writing to file';
   });
 

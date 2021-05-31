@@ -16,7 +16,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           
       - name: Install deps and build
-        run: yarn install
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
         
       - run: yarn publish
         env:
