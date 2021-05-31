@@ -8,7 +8,7 @@
     "postinstall": "yarn icons:generate && preconstruct dev",
     "prepare": "is-ci || husky install",
     "icons:generate": "yarn workspace fleet-icons generate",
-    "docs:deploy": "yarn workspace documentation deploy",
+    "docs:deploy": "yarn workspace docs deploy",
     "build": "preconstruct build",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
