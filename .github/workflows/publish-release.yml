@@ -20,6 +20,6 @@ jobs:
           yarn install --frozen-lockfile
           yarn build
         
-      - run: yarn publish
+      - run: yarn publish packages/fleet-icons/package.json
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
