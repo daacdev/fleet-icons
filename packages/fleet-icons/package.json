@@ -17,10 +17,7 @@
     "reactjs",
     "styled-components",
     "bootstrap-icons",
-    "icons",
-    "fleet",
-    "styled-fleet",
-    "fleet-icons"
+    "icons"
   ],
   "files": [
     "dist",
