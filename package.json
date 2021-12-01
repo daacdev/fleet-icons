@@ -28,7 +28,7 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@preconstruct/cli": "^2.1.0",
-    "@testing-library/dom": "^8.0.0",
+    "@testing-library/dom": "^8.11.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.23",
     "@types/lodash.camelcase": "^4.3.6",
