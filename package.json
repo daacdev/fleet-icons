@@ -52,7 +52,7 @@
     "husky": "^6.0.0",
     "is-ci": "^3.0.0",
     "jest": "^27.0.5",
-    "jest-styled-components": "^7.0.4",
+    "jest-styled-components": "^7.0.8",
     "lint-staged": "^11.0.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
